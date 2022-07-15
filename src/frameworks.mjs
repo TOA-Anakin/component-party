@@ -170,8 +170,13 @@ export default [
 		title: 'Qwik',
 		img: 'framework/qwik.svg',
 		eslint: {
-			files: ['**/qwik/**'],
-			extends: ['eslint:recommended'],
+			files: ['**/qwik/*.tsx'],
+			extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react/jsx-runtime'],
+			settings: {
+				react: {
+					version: 'detect',
+				},
+			},
 		},
 		playgroundURL: 'https://qwik.builder.io/playground',
 		documentationURL: 'https://qwik.builder.io/docs/overview',

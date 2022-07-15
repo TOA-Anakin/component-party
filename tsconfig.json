@@ -10,8 +10,9 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
-    "module": "es2020",
+    "target": "es6",
+    "module": "commonjs",
+    "jsx": "react",
     "lib": ["es2018", "dom"],
     "paths": {
       "@/*": ["src/*"]
